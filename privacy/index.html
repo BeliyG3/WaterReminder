@@ -19,7 +19,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta">WaterReminder for iOS and Apple Watch · Effective date: July 8, 2026</p>
+<p class="meta">WaterReminder for iOS and Apple Watch · Effective date: October 1, 2026</p>
 
 <p>WaterReminder is built so that your data stays yours. The app has no accounts, no ads,
 no analytics, and no tracking. This policy explains what data the app handles and where it lives.</p>
@@ -28,8 +28,9 @@ no analytics, and no tracking. This policy explains what data the app handles an
 <ul>
   <li><strong>Hydration log</strong> — drinks you record (type, volume, time), your daily goal,
       custom drinks, streaks, and app settings.</li>
-  <li><strong>Profile inputs you optionally enter</strong> to calculate a goal (such as weight,
-      activity level). These stay inside the app.</li>
+  <li><strong>Goal calculator inputs</strong> — if you use the optional goal calculator (weight,
+      sex, activity level, climate), these values are used only on the device to compute a
+      suggested goal and are <strong>not saved</strong>. Only the resulting daily goal is stored.</li>
 </ul>
 <p>All of this is stored <strong>on your device</strong> and, if iCloud is enabled, synchronized
 through your <strong>private iCloud database (CloudKit)</strong> so your iPhone and Apple Watch stay
@@ -37,17 +38,25 @@ in sync. The private iCloud database is accessible only to your Apple&nbsp;ID. W
 have <strong>no access</strong> to it and operate no servers of our own that receive your data.</p>
 
 <h2>Apple Health (HealthKit)</h2>
-<p>With your permission, WaterReminder writes the drinks you log to Apple Health as water intake,
-and reads water entries from Apple Health to keep your statistics accurate.</p>
-<p>Note that the value written to Health is the drink's <strong>effective hydration volume</strong> —
-the logged volume adjusted by the drink type's hydration coefficient (for example, 250&nbsp;ml of
-coffee is recorded as 225&nbsp;ml of water; alcoholic drinks are recorded as 0). The original
-logged volume is preserved in the Health sample's metadata. Health data:</p>
+<p>With your permission, WaterReminder <strong>writes</strong> the drinks you log to Apple Health
+as water intake. The app <strong>does not read</strong> any data from Apple Health.</p>
 <ul>
-  <li>is used only to provide the app's hydration-tracking features;</li>
-  <li>is never used for advertising, marketing, or data mining;</li>
-  <li>is never sold or shared with third parties;</li>
-  <li>can be revoked at any time in Settings&nbsp;→ Privacy &amp; Security → Health.</li>
+  <li><strong>What is written:</strong> the drink's effective hydration volume — the logged volume
+      adjusted by the drink type's hydration coefficient, and never more than the volume you
+      actually logged (for example, 250&nbsp;ml of coffee is recorded as 225&nbsp;ml of water;
+      alcoholic drinks are not recorded). The original logged volume and drink type are kept in the
+      Health sample's metadata.</li>
+  <li><strong>Who writes:</strong> only the iPhone app writes to Health. Drinks logged on
+      Apple&nbsp;Watch reach Health through your iPhone, so nothing is recorded twice.</li>
+  <li><strong>No Health data in iCloud:</strong> since the app does not read Health, no Health data
+      is stored in the app, synchronized through iCloud, or sent anywhere else. Only the app's own
+      hydration log is synchronized, as described above.</li>
+  <li>Health integration is used only to provide the app's hydration-tracking features; it is never
+      used for advertising, marketing, or data mining, and never sold or shared with third
+      parties.</li>
+  <li>You can turn off access at any time in Settings&nbsp;→ Privacy &amp; Security → Health →
+      WaterReminder. Turning off access stops new entries but does not remove entries already
+      written; see <em>Data export and deletion</em> below.</li>
 </ul>
 
 <h2>What we do NOT collect</h2>
@@ -72,9 +81,12 @@ server and involve no data transmission.</p>
       time from Settings (Premium feature). The export is generated locally and shared only where
       you choose to send it.</li>
   <li><strong>Deletion:</strong> deleting the app removes all local data. To also remove synced
-      data, delete WaterReminder data in Settings&nbsp;→ Apple&nbsp;ID → iCloud → Manage Storage,
-      and revoke Health permissions in the Health app. Because we hold no copies, no request to us
-      is needed — the data is under your control.</li>
+      data, delete WaterReminder data in Settings&nbsp;→ Apple&nbsp;ID → iCloud → Manage Storage.</li>
+  <li><strong>Health entries:</strong> to remove the water entries WaterReminder wrote to Apple Health,
+      open the Health app → your profile picture → Apps → WaterReminder → Delete All Data from
+      “WaterReminder”.</li>
+  <li>Because we hold no copies of your data, no request to us is needed — the data is under your
+      control.</li>
 </ul>
 
 <h2>Children</h2>
